@@ -1,0 +1,155 @@
+$color-green: #a0be5b;
+$color-brown: #bbb4a4;
+$color-light-blue: #bfd7ea;
+$color-blue: #a0be5b;
+$serif-fonts: Georgia, Cambria, "Times New Roman", serif;
+$font-base-size: 20px;
+$box-border: 1px solid #a0be5b;
+$box-border-radius: 3px;
+$box-padding: 10px;
+$box-margin: 5px;
+$table-border: 1px solid #bfd7ea;
+$table-spacing: 0.5rem;
+$cell-width: 8rem;
+$cell-height: 2rem;
+$cell-border: 1px solid #bfd7ea;
+$box-outline: none;
+$button-shadow: 0 1.5px #bfd7ea;
+
+p {
+  color: darken($color-brown, 10%);
+  font: $serif-fonts;
+  font-size: $font-base-size * 0.9;
+
+  textarea {
+    font: $serif-fonts;
+    font-size: $font-base-size * 0.75;
+    border: $box-border;
+    border-radius: $box-border-radius;
+    padding: $box-padding;
+    margin: $box-margin;
+    outline: $box-outline;
+  }
+}
+
+a {
+  font: $serif-fonts;
+  color: $color-blue;
+  font-size: $font-base-size * 0.75;
+
+  &:hover {
+    color: lighten($color-blue, 20%);
+  }
+
+  &:active {
+    color: darken($color-light-blue, 50%);
+  }
+}
+
+h1 {
+  font: $serif-fonts;
+  font-size: $font-base-size * 2.25;
+  color: $color-green;
+}
+
+h2 {
+  font: $serif-fonts;
+  font-size: $font-base-size * 2;
+  color: lighten($color-green, 20%);
+}
+
+h3 {
+  font: $serif-fonts;
+  font-size: $font-base-size * 1.75;
+  color: $color-brown;
+}
+
+h4 {
+  font: $serif-fonts;
+  font-size: $font-base-size * 1.25;
+  color: lighten($color-brown, 20%);
+}
+
+h5 {
+  font: $serif-fonts;
+  font-size: $font-base-size * 1.5;
+  color: $color-light-blue;
+}
+
+h6 {
+  font: $serif-fonts;
+  font-size: $font-base-size * 1;
+  color: $color-light-blue;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="checkbox"],
+input[type="radio"] {
+  font: $serif-fonts;
+  font-size: $font-base-size * 0.75;
+  border: $box-border;
+  border-radius: $box-border-radius;
+  outline: $box-outline;
+}
+
+input[type="button"] {
+  font: $serif-fonts;
+  font-size: $font-base-size * 0.75;
+  background-color: $color-brown;
+  border-radius: $box-border-radius;
+  border: $box-border;
+  outline: $box-outline;
+
+  &:hover {
+    background-color: lighten($color-brown, 20%);
+
+    &:active {
+      background-color: darken($color-brown, 30%);
+      box-shadow: $button-shadow;
+    }
+  }
+}
+
+figure {
+  img {
+    border-radius: $box-border-radius;
+    border: $box-border;
+    padding: $box-padding;
+    margin: $box-margin;
+  }
+}
+
+figcaption {
+  font: $serif-fonts;
+  font-size: $font-base-size * 1;
+  color: darken($color-brown, 30%);
+  font-weight: bold;
+}
+
+table {
+  border-spacing: $table-spacing;
+  border: $table-border;
+
+  th {
+    font: $serif-fonts;
+    font-size: $font-base-size * 0.75;
+    width: $cell-width;
+    height: $cell-height;
+    border: $cell-border;
+    background-color: $color-blue;
+  }
+}
+
+tbody {
+  border-spacing: $table-spacing;
+
+  td {
+    font: $serif-fonts;
+    font-size: $font-base-size * 0.65;
+    width: $cell-width;
+    height: $cell-height;
+    background-color: $color-light-blue;
+    text-align: center;
+  }
+}
