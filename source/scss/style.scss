@@ -1,20 +1,4 @@
-$color-green: #a0be5b;
-$color-brown: #bbb4a4;
-$color-light-blue: #bfd7ea;
-$color-blue: #a0be5b;
-$serif-fonts: Georgia, Cambria, "Times New Roman", serif;
-$font-base-size: 20px;
-$box-border: 1px solid #a0be5b;
-$box-border-radius: 3px;
-$box-padding: 10px;
-$box-margin: 5px;
-$table-border: 1px solid #bfd7ea;
-$table-spacing: 0.5rem;
-$cell-width: 8rem;
-$cell-height: 2rem;
-$cell-border: 1px solid #bfd7ea;
-$box-outline: none;
-$button-shadow: 0 1.5px #bfd7ea;
+@import "_variables";
 
 p {
   color: darken($color-brown, 10%);
